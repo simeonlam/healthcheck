@@ -5,8 +5,8 @@ services:
     environment:
       TELEGRAM_TOKEN: "token"
       TELEGRAM_USER_IDS: "12345678"
-      # CRON_VALUE: "0 */12 * * * *" # every hour
-      CRON_VALUE: "0 * * * * *" # every min
+      CRON_VALUE: "0 */12 * * * *" # every hour
+      # CRON_VALUE: "0 * * * * *" # every min
 
     restart: unless-stopped
     build:
