@@ -1,0 +1,17 @@
+version: '3.6'
+services:
+
+  healthcheck:
+    environment:
+      TELEGRAM_TOKEN: "token"
+      TELEGRAM_USER_IDS: "12345678"
+      # CRON_VALUE: "0 */12 * * * *" # every hour
+      CRON_VALUE: "0 * * * * *" # every min
+
+    restart: unless-stopped
+    build:
+      dockerfile: ./Dockerfile
+      context: ./
+    volumes:
+      - ./src/index.js:/app/index.js
+      - ./src/config.js:/app/config.js

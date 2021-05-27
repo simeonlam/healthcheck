@@ -1,0 +1,43 @@
+{
+  "name": "healthcheck",
+  "version": "1.0.0",
+  "description": "healthchat alert to telgram",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node index.js",
+    "lint": "DEBUG=eslint:linter eslint src",
+    "test": "NODE_ENV=test npm run unit"
+  },
+  "author": "simeon",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "node-cron": "^3.0.0",
+    "node-telegram-bot-api": "^0.53.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "12.1.4",
+    "@commitlint/config-conventional": "11.0.0",
+    "eslint": "7.9.0",
+    "eslint-config-standard": "14.1.1",
+    "eslint-plugin-import": "2.23.3",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-promise": "5.1.0",
+    "eslint-plugin-standard": "5.0.0",
+    "husky": "6.0.0",
+    "jest": "26.6.3",
+    "lint-staged": "11.0.0",
+    "prettier-standard": "16.4.1",
+    "standard-version": "9.3.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test && lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "engines": {
+    "node": ">=12.14.1",
+    "npm": ">=6.13.4"
+  }
+}
