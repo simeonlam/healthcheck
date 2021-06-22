@@ -15,5 +15,7 @@ updates:
       timezone: "Asia/Hong_Kong"
     labels:
       - "dependencies"
+    assignees:
+      - "simeonlam"
     # Allow up to 3 open pull requests
     # open-pull-requests-limit: 3
