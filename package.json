@@ -28,7 +28,7 @@
     "jest": "27.2.5",
     "lint-staged": "11.2.3",
     "prettier-standard": "16.4.1",
-    "standard-version": "9.3.1",
+    "standard-version": "9.3.2",
     "trim": ">=1.0.1"
   },
   "husky": {
