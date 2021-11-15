@@ -8,11 +8,11 @@ updates:
   - package-ecosystem: "npm" # See documentation for possible values
     directory: "/" # Location of package manifests
     schedule:
-      interval: "daily"
-#       interval: "weekly"
-#       day: "saturday"
-      time: "00:00"
-      timezone: "Asia/Hong_Kong"
+#       interval: "daily"
+      interval: "weekly"
+      day: "saturday"
+#       time: "00:00"
+#       timezone: "Asia/Hong_Kong"
     labels:
       - "dependencies"
     assignees:
